@@ -4,10 +4,11 @@ from core.user.models import User
 data_user = {
     "username": "test_user",
     "email": "test@gmail.com",
-    "password": "test_password",
     "first_name": "Test",
-    "last_name": "User"
+    "last_name": "User",
+    "password": "test_password",
 }
+
 
 @pytest.fixture
 def user(db) -> User:
